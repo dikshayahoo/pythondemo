@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: dikshayahoopythondemo 
-          image: fisrtcontainer.azurecr.io/dikshayahoopythondemo
+          image: fisrtcontainer.azurecr.io/acrdemomanual
           ports:
           - containerPort: 5000
 ---
