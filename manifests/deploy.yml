@@ -1,0 +1,27 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: dikshayahoopythondemo 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dikshayahoopythondemo 
+    spec:
+      containers:
+        - name: dikshayahoopythondemo 
+          image: fisrtcontainer.azurecr.io/dikshayahoopythondemo
+          ports:
+          - containerPort: 5000
+---
+apiVersion: v1
+kind: Service
+metadata:
+    name: dikshayahoopythondemo
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 5000 
+    selector:
+        app: dikshayahoopythondemo
