@@ -4,14 +4,14 @@ metadata:
   name: dikshayahoopythondemo 
 spec:
   replicas: 1
-  template:
+  tempate:
     metadata:
       labels:
         app: dikshayahoopythondemo 
     spec:
       containers:
         - name: dikshayahoopythondemo 
-          image: fisrtcontainer.azurecr.io/acrdemomanual
+          image: fisrtcontainer.azurecr.io/dockerrepodummy
           ports:
           - containerPort: 5000
 ---
