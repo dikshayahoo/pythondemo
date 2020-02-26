@@ -11,7 +11,7 @@ spec:
     spec:
       containers:
         - name: dikshayahoopythondemo 
-          image: fisrtcontainer.azurecr.io/dockerrepodummy
+          image: fisrtcontainer.azurecr.io/dockerrepodummy:90
           ports:
           - containerPort: 5000
 ---
