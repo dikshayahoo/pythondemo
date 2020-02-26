@@ -4,7 +4,7 @@ metadata:
   name: dikshayahoopythondemo 
 spec:
   replicas: 1
-  tempate:
+  template:
     metadata:
       labels:
         app: dikshayahoopythondemo 
